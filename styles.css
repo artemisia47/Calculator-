@@ -1,0 +1,91 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url(cattomathematico.jpg);
+    background-color: rgba(137, 131, 131, 0.948);
+    background-blend-mode:color-burn;
+}
+
+.calculator {
+    background: rgb(81, 42, 42);
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    background: rgb(63, 41, 41);
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
+    background: #3e1717;
+}
+
+.btn {
+    background: rgb(142, 87, 44);
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #823804;
+}
+
+.operator {
+    background: #663f20;
+    color: white;
+}
+
+.operator:hover {
+    background: #54403b;
+}
+
+.equals {
+    background: #703727;
+    color: rgb(15, 11, 11);
+    grid-column: span 1;
+    grid-row: span 2; /* Span the last two rows */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.equals:hover {
+    background: #522f1c;
+}
+
+#gif-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#clear-gif {
+    max-width: 100%;
+    height: auto;
+}
